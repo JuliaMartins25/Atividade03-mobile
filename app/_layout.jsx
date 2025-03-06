@@ -6,11 +6,11 @@ export default function Layout(){
     return (
         <Tabs
         screenOptions={{
-            tapBarActiveTintColor: "#4312A4",
+            tapBarActiveTintColor: "#4B0082",
             tabBarInactiveTintColor: "#FFFFFF",
             tabBarStyle: {
-                backgroundColor: "#FFCC0A",
-                borderTopColor: "#4312A4",
+                backgroundColor: "#FFC0CB",
+                borderTopColor: "#4B0082",
                 borderTopWidth: 1,
                 height: 60,
             },
@@ -35,6 +35,15 @@ export default function Layout(){
                 title:"Perfil",
                 tapBarIcon: ({ color, size }) => (
                     <Ionicons name="person" color={color} size={size} />
+                ),
+            }}
+        />
+        <Tabs.Screen
+            name="news"
+            options={{
+                title:"Notícias",
+                tapBarIcon: ({ color, size }) => (
+                    <Ionicons name="news" color={color} size={size} />
                 ),
             }}
         />
