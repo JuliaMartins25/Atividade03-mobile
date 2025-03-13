@@ -1,11 +1,10 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
-
 export default function Layout(){
     return (
         <Tabs
-        screenOptions={{
+            screenOptions={{
             tapBarActiveTintColor: "#4B0082",
             tabBarInactiveTintColor: "#FFFFFF",
             tabBarStyle: {
@@ -34,7 +33,7 @@ export default function Layout(){
             options={{
                 title:"Perfil",
                 tapBarIcon: ({ color, size }) => (
-                    <Ionicons name="person" color={color} size={size} />
+                    <MaterialIcons name="people" size={24} color="black" />
                 ),
             }}
         />
@@ -43,10 +42,19 @@ export default function Layout(){
             options={{
                 title:"Notícias",
                 tapBarIcon: ({ color, size }) => (
-                    <Ionicons name="news" color={color} size={size} />
+                    <Ionicons name="news" color={white} size={16} />
                 ),
             }}
         />
+
+        <Tabs.Screen
+                    name="contact"
+                    options={{
+                        title:"Contato",
+
+                    }}
+        />
+
     </Tabs>
     );
 }
