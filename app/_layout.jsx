@@ -1,60 +1,61 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function Layout(){
+export default function Layout() {
     return (
         <Tabs
             screenOptions={{
-            tapBarActiveTintColor: "#4B0082",
-            tabBarInactiveTintColor: "#FFFFFF",
-            tabBarStyle: {
-                backgroundColor: "#FFC0CB",
-                borderTopColor: "#4B0082",
-                borderTopWidth: 1,
-                height: 60,
-            },
-            tapBarLabelStyle: {
-                fontSize: 12,
-                marginBottom: 5,
-            },
-        }}
-    >
-        <Tabs.Screen
-            name="index"
-            options={{
-                title: "Home",
-                tabBarIcon: ({ color, size }) => (
-                    <Ionicons name="home" color={color} size={size} />
-                ),
+                // tapBarActiveTintColor: "#9a00ff",
+                tabBarInactiveTintColor: "#ffffff",     
+                tabBarActiveTintColor: "#ffff00",
+                tabBarStyle: {
+                    backgroundColor: "#4B0082",
+                    height: '10%',
+                },
+                tapBarLabelStyle: {
+                    fontSize: 12,
+                    marginBottom: 15,
+                },
             }}
-        />
-        <Tabs.Screen
-            name="profile"
-            options={{
-                title:"Perfil",
-                tapBarIcon: ({ color, size }) => (
-                    <MaterialIcons name="people" size={24} color="black" />
-                ),
-            }}
-        />
-        <Tabs.Screen
-            name="news"
-            options={{
-                title:"Notícias",
-                tapBarIcon: ({ color, size }) => (
-                    <Ionicons name="news" color={white} size={16} />
-                ),
-            }}
-        />
-
-        <Tabs.Screen
-                    name="contact"
-                    options={{
-                        title:"Contato",
-
-                    }}
-        />
-
-    </Tabs>
+        >
+            <Tabs.Screen
+                name="index"
+                options={{
+                    title: "Home",
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="home" color={color} size={size} />
+                    ),
+                }}
+            />
+            
+            <Tabs.Screen
+                name="news"
+                options={{
+                    title: "Notícia",
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="newspaper-outline" color={color} size={size} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="profile"
+                options={{
+                    title: "Perfil",
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="person-outline" color={color} size={size} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="contact"
+                options={{
+                    title: "Contato",
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="call-outline" color={color} size={size} />
+                    ),
+                }}
+            />
+          
+        </Tabs>
     );
 }

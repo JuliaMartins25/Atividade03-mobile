@@ -39,10 +39,10 @@ const styles = StyleSheet.create({
         color: '#333',
         fontWeight: 'bold',
         marginBottom: 40,
-        marginTop: 20,
+        marginTop: 50,
     },
 
-    text: {
+    text0: {
         fontSize: 22,
         color: '#333',
     },

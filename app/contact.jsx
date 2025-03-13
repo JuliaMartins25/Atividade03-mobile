@@ -8,17 +8,17 @@ export default function Contact() {
 
             <View style={styles.containerPai}>
 
-            <View style={styles.containerNum}>
-                <Text style={styles.numero}> Ligue para </Text> <Text style={styles.numeroCor}> +55 (19) 99700-7070 </Text>
+                <View style={styles.containerNum}>
+                    <Text style={styles.numero}> Ligue para </Text> <Text style={styles.numeroCor}> +55 (19) 99700-7070 </Text>
 
+                </View>
+
+                <View style={styles.containerE}>
+
+                    <Text style={styles.textE}>E-mail: </Text> <Text style={styles.emailCor}> nossoapp@gmail.com </Text>
+
+                </View>
             </View>
-
-            <View style={styles.containerE}>
-
-                <Text style={styles.textE}>E-mail: </Text> <Text style={styles.emailCor}> nossoapp@gmail.com </Text>
-
-            </View>
-        </View>
 
         </View>
     );
@@ -30,14 +30,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#f0f0f0',
-gap: 50,
+        gap: 50,
     },
 
     containerPai: {
-    margin: 0,
-    backgroundColor: '#333',
-    height: 100,
-    width: 500,
+        margin: 0,
+        backgroundColor: '#333',
+        height: 100,
+        width: 500,
     },
 
     containerNum: {
